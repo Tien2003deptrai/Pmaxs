@@ -9,7 +9,7 @@ const Guitar = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('https://shop-guitar.onrender.com/app/products');
+                const response = await fetch('https://gateway-restapi.onrender.com/products/guitar');
                 const responseData = await response.json();
                 console.log('products', responseData.products);
                 setProducts(responseData.products);

@@ -9,7 +9,7 @@ const Restaurant = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('https://foodie-finder-api.onrender.com/api/restaurant');
+                const response = await fetch('https://gateway-restapi.onrender.com/products/food');
                 const responseData = await response.json();
 
                 if (responseData.status === "success" && responseData.data && Array.isArray(responseData.data.result)) {

@@ -8,7 +8,7 @@ const Hotel = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('https://services-api-cdb2.onrender.com/api/hotels');
+                const response = await fetch('https://gateway-restapi.onrender.com/products/hotel');
                 const responseData = await response.json();
 
                 console.log('responseData', responseData);

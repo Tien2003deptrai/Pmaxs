@@ -9,7 +9,7 @@ const Medipharma = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('https://medipharma-api.onrender.com/api/products/allProducts');
+                const response = await fetch('https://gateway-restapi.onrender.com/products/medi');
                 const productsData = await response.json();
                 console.log('products', productsData.data);
                 setProducts(productsData.data);

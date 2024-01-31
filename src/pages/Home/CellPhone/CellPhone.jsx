@@ -8,7 +8,7 @@ const CellPhone = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('https://service-api-qhk1.onrender.com/api/products');
+                const response = await fetch('https://gateway-restapi.onrender.com/products/nhom5');
                 const productsData = await response.json();
                 console.log('products', productsData);
                 setProducts(productsData);
